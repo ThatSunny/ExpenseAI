@@ -1,0 +1,38 @@
+# Node modules
+node_modules
+
+# Next.js build output
+.next
+out
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor-specific
+.vscode/
+.idea/
+*.swp
+
+# Drizzle / Prisma / DB-specific (if using)
+drizzle/
+drizzle.sqlite
+*.sqlite
+*.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Build output (if using custom build folders)
+dist/
