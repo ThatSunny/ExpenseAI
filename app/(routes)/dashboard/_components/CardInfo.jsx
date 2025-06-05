@@ -105,7 +105,7 @@ function CardInfo({ budgetList, incomeList }) {
               </div>
               <Wallet className="bg-blue-800 p-3 h-12 w-12 rounded-full text-white" />
             </div>
-            <div className="p-7 border rounded-2xl flex items-center justify-between">
+            {/* <div className="p-7 border rounded-2xl flex items-center justify-between">
               <div>
                 <h2 className="text-sm">Sum of Income Streams</h2>
                 <h2 className="font-bold text-2xl">
@@ -113,7 +113,7 @@ function CardInfo({ budgetList, incomeList }) {
                 </h2>
               </div>
               <CircleDollarSign className="bg-blue-800 p-3 h-12 w-12 rounded-full text-white" />
-            </div>
+            </div> */}
           </div>
         </div>
       ) : (

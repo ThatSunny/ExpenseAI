@@ -18,7 +18,7 @@ function ExpenseListTable({ expensesList, refreshData }) {
     }
   };
   return (
-    <div className="mt-3">
+    <div className="mt-3 text-sm md:text-base">
       <h2 className="font-bold text-lg">Latest Expenses</h2>
       <div className="grid grid-cols-4 rounded-tl-xl rounded-tr-xl bg-slate-200 p-2 mt-3">
         <h2 className="font-bold">Name</h2>
@@ -30,7 +30,19 @@ function ExpenseListTable({ expensesList, refreshData }) {
         <div className="grid grid-cols-4 bg-slate-50 rounded-bl-xl rounded-br-xl p-2">
           <h2>{expenses.name}</h2>
           <h2>{expenses.amount}</h2>
-          <h2>{expenses.createdAt}</h2>
+          {/* <h2>{expenses.createdAt}</h2> */}
+          {/* Full date on desktop */}
+          <h2 className="hidden md:block">
+            {expenses.createdAt}
+          </h2>
+
+          {/* Short date on mobile */}
+          <h2 className="block md:hidden">
+            {new Date(expenses.createdAt).toLocaleDateString("en-US", {
+              day: "numeric",
+              month: "short",
+            })}
+          </h2>
           <h2
             onClick={() => deleteExpense(expenses)}
             className="text-red-500 cursor-pointer"

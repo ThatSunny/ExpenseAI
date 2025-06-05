@@ -23,7 +23,7 @@ const getFinancialAdvice = async (totalBudget, totalIncome, totalSpend) => {
         Authorization: `Bearer ${GROQ_API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'llama3-8b-8192', // You can also try 'mixtral-8x7b-32768'
+        model: 'llama3-8b-8192', // Alternate: 'mixtral-8x7b-32768'
         messages: [{ role: 'user', content: userPrompt }],
         temperature: 0.7,
       }),

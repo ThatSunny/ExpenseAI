@@ -84,7 +84,7 @@ function Dashboard() {
         Hi, {user?.username && user.username.charAt(0).toUpperCase() + user.username.slice(1)} 👋
       </h2>
       <p className="text-gray-500">
-        Here's what happenning with your money, Lets Manage your expense
+        Here's what happenning with your money, Let's manage your expenses!
       </p>
 
       <CardInfo budgetList={budgetList} incomeList={incomeList} />
