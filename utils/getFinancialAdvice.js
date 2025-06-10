@@ -9,9 +9,9 @@ const getFinancialAdvice = async (totalBudget, totalIncome, totalSpend) => {
   try {
     const userPrompt = `
       Based on the following financial data:
-      - Total Budget: ${totalBudget} USD 
-      - Expenses: ${totalSpend} USD 
-      - Incomes: ${totalIncome} USD
+      - Total Budget:₹ ${totalBudget} USD 
+      - Expenses:₹ ${totalSpend} USD 
+      - Incomes:₹ ${totalIncome} USD
       Provide detailed financial advice in 2 sentences to help me manage my finances more effectively.
       Dont add any words like "2 sentence" make it feel more natural.
     `;
